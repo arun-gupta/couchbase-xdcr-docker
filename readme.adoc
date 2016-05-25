@@ -1,3 +1,6 @@
 = Couchbase Cluster using Docker Swarm
 
 Details: TBD
+
+- Create Docker Swarm cluster: `./create-cluster.sh cluster1`
+- Start a Couchbase cluster: TODO
