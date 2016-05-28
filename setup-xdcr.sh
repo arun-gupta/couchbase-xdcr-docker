@@ -5,8 +5,9 @@ xdcr-setup \
 --user Administrator \
 --password password \
 --create \
+--xdcr-cluster-name=XXX \
 --xdcr-hostname=$(docker-machine ip swarm-master-$2):8091
---xdcr-cluster-name=Administrator \
+--xdcr-username=Administrator \
 --xdcr-password=password
 --xdcr-demand-encryption=0
 
