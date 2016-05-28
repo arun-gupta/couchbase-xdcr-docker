@@ -11,3 +11,10 @@ do
         --server-add-password=password
 done
 
+$COUCHBASE_CLI \
+	setting-cluster \
+	--cluster=$(docker-machine ip swarm-master-$1):8091 \
+	--user Administrator \
+	--password password \
+	--cluster-name=cluster$1
+
