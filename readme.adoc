@@ -16,7 +16,7 @@ docker-compose scale db=3
 +
 ** Create Couchbase cluster: `./create-couchbase-cluster.sh $cluster`
 ** Rebalance Couchbase cluster: `./rebalance-couchbase-cluster.sh $cluster`
-* Setup XDCR: `./setup-xdcr.sh A B`
+* Setup XDCR from A->B: `./setup-xdcr.sh A B`
 
 == TODO
 
