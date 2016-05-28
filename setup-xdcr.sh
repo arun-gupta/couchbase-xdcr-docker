@@ -17,7 +17,7 @@ xdcr-replicate \
 --user Administrator \
 --password password \
 --create \
---xdcr-cluster-name=test \ 
+--xdcr-cluster-name=XXX \ 
 --xdcr-from-bucket=travel-sample \
 --xdcr-to-bucket=travel-sample
 
