@@ -1,4 +1,6 @@
-= Configure Couchbase Cross Data Center Replication using Docker Swarm
+= Couchbase XDCR using Docker Swarm
+
+http://developer.couchbase.com/documentation/server/current/xdcr/xdcr-intro.html[Couchbase Cross Datacenter Replication] (XDCR) provides an easy way to replicate data from one cluster to another.
 
 * Start Consul: `./start-consul.sh`
 * For `cluster` in `[A, B]` do
