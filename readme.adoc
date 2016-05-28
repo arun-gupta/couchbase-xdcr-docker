@@ -6,7 +6,7 @@ Steps to create two Docker Swarm clusters, a Couchbase cluster in each, and setu
 
 * Start Consul: `./start-consul.sh`
 * For `cluster` in `[A, B]` do
-** Create Docker Swarm cluster A: `./create-docker-swarm-cluster.sh $cluster`
+** Create Docker Swarm cluster: `./create-docker-swarm-cluster.sh $cluster`
 ** Start Couchbase nodes in Docker Swarm cluster:
 +
 ```
