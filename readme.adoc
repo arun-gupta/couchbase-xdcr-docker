@@ -1,6 +1,14 @@
-= Couchbase Cluster using Docker Swarm
+= Configure Couchbase Cross Data Center Replication using Docker Swarm
 
-Details: TBD
-
-- Create Docker Swarm cluster: `./create-cluster.sh cluster1`
-- Start a Couchbase cluster: TODO
+* Start Consul: `./start-consul.sh`
+* For `cluster` in `[A, B]` do
+** Create Docker Swarm cluster A: `./create-docker-swarm-cluster.sh $cluster`
+** Start a Couchbase cluster in Docker Swarm A:
++
+```
+eval "$(docker-machine env --swarm swarm-master-$cluster)"
+docker-compose scale db=3
+```
++
+** Create Couchbase cluster: `./create-couchbase-cluster.sh $cluster`
+** Rebalance Couchbase cluster: ./rebalance-couchbase-cluster.sh $cluster`
