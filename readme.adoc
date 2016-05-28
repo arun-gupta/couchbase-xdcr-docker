@@ -11,4 +11,4 @@ docker-compose scale db=3
 ```
 +
 ** Create Couchbase cluster: `./create-couchbase-cluster.sh $cluster`
-** Rebalance Couchbase cluster: ./rebalance-couchbase-cluster.sh $cluster`
+** Rebalance Couchbase cluster: `./rebalance-couchbase-cluster.sh $cluster`
